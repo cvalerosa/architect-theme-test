@@ -88,8 +88,14 @@
 import { onMounted } from 'vue';
 import { useI18n } from 'vue-i18n';
 import Header from '@/components/Header';
+import VideoBanner from '@/components/VideoBanner';
+import Services from '@/components/Services';
 import Project from '@/components/Project';
 import Featured from '@/components/Featured';
+import About from '@/components/About';
+import Team from '@/components/Team';
+import Counter from '@/components/Counter';
+import Blog from '@/components/Blog';
 import SubscribeForm from '@/components/SubscribeForm';
 import Footer from '@/components/Footer';
 import Hidden from '@/components/Hidden';
@@ -101,8 +107,14 @@ import { defineNuxtComponent, useRouter, useCookie } from '#app';
 export default defineNuxtComponent({
   components: {
     'header-main': Header,
+    VideoBanner,
+    Services,
     Project,
     Featured,
+    About,
+    Team,
+    Counter,
+    Blog,
     SubscribeForm,
     'footer-main': Footer,
     PageNav,
