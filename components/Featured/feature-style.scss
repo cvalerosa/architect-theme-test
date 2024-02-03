@@ -1,0 +1,105 @@
+.video-carousel {
+  @include shadow15;
+  @include palette-background-text-primary;
+  height: 420px;
+  position: relative;
+  z-index: 5;
+  :deep(.splide__list) {
+    direction: ltr;
+  }
+  @include breakpoints-down(sm) {
+    height: 360px
+  }
+  @include breakpoints-down(xs) {
+    height: 220px
+  }
+  :deep(.splide__pagination) {
+    bottom: $spacing4;
+    @include breakpoints-down(xs) {
+      visibility: hidden
+    }
+    li button {
+      width: 15px;
+      height: 15px;
+      background: $palette-common-white;
+      border-color: $palette-common-white;
+      border-radius: 15px;
+      transition: all 0.5s ease-out;
+      transform: none;
+      &.is-active {
+        width: 40px;
+      }
+      &:hover {
+        opacity: 0.5
+      }
+    }
+    li button:before {
+      display: none
+    }
+  }
+}
+
+.item {
+  overflow: hidden;
+  height: 420px;
+  &.v-card {
+    background-color: $palette-common-black;
+  }
+  @include breakpoints-down(sm) {
+    height: 360px
+  }
+  @include breakpoints-down(xs) {
+    height: 220px
+  }
+  img {
+    opacity: 0.5;
+    width: 100%;
+    min-height: 100%;
+    display: block;
+  }
+}
+
+.play-btn {
+  border-radius: 0px;
+  background: $palette-secondary-main;
+  opacity: 1;
+  backdrop-filter: saturate(90%) blur(5px);
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  @include left(calc(50% - 40px));
+  top: calc(50% - 40px);
+  padding: 0;
+  i.v-icon {
+    color: $palette-common-white;
+    font-size: 80px;
+  }
+}
+
+.video-popup {
+  max-width: none;
+  @include breakpoints-up(sm) {
+    width: 690px;
+  }
+  :deep(iframe) {
+    width: 100%
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 4px;
+  @include right(4px)
+}
+
+.headline {
+  .title-main {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 0.0125em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
