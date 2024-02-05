@@ -1,13 +1,15 @@
+const currentYear = new Date().getFullYear();
+
 const brand = {
   architect: {
-    name: 'Architect',
-    desc: 'Veluxi architect - Vue Single Landing Page Template',
-    prefix: 'veluxi',
-    footerText: 'Veluxi Theme - All Rights Reserved 2023',
-    logoText: 'Veluxi architect',
-    projectName: 'architect',
-    url: 'veluxi.ux-maestro.com/architect',
-    img: '/assets/images/architect-logo.png',
+    name: 'BIOscape',
+    desc: 'BIOscape - Clay Technologies',
+    prefix: 'BIOscape',
+    footerText: `All rights reserved ${currentYear}`,
+    logoText: 'BIOscape',
+    projectName: 'bioscape',
+    url: 'bioscape.tech',
+    img: '.output/public/images/architect-logo.png',
     notifMsg: 'Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.',
   },
 };

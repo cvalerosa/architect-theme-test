@@ -1,6 +1,10 @@
 {
+  "functions": {
+    "source": ".output/server",
+    "runtime": "nodejs18"
+  },
   "hosting": {
-    "public": "public",
+    "public": ".output/public",
     "ignore": [
       "firebase.json",
       "**/.*",

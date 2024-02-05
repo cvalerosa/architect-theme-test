@@ -60,7 +60,7 @@ const team = [
   {
     photo: imgAPI.architect[9],
     name: 'John Doe',
-    title: 'chairman',
+    title: 'Chairman',
   },
   {
     photo: imgAPI.architect[10],
