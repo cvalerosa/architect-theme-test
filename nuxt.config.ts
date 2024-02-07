@@ -17,14 +17,16 @@ export default defineNuxtConfig({
         { name: 'msapplication-TileImage', content: '/favicons/ms-icon-144x144.png' },
         // PWA primary color
         { name: 'theme-color', content: theme.primary},
+        // Turn off Google Search indexing
+        { name: 'robots', content: 'noindex, nofollow' },
         // Facebook
         { property: 'author', content: 'luxi' },
-        { property: 'og:site_name', content: 'luxi.ux-maestro.com' },
+        { property: 'og:site_name', content: 'facebook.com' },
         { property: 'og:locale', content: 'en_US' },
         { property: 'og:type', content: 'website' },
         // Twitter
-        { property: 'twitter:site', content: 'luxi.ux-maestro.com' },
-        { property: 'twitter:domain', content: 'luxi.ux-maestro.com' },
+        { property: 'twitter:site', content: 'twitter.com' },
+        { property: 'twitter:domain', content: 'twitter.com' },
         { property: 'twitter:creator', content: 'luxi' },
         { property: 'twitter:card', content: 'summary' },
         { property: 'twitter:image:src', content: '/images/logo.png' },
@@ -74,8 +76,9 @@ export default defineNuxtConfig({
     '@/assets/scss/vendors/hamburger-menu.css'
   ],
   modules: [
+    '@dargmuesli/nuxt-cookie-control',
     '@nuxtjs/i18n',
-    'vite-plugin-eslint'
+    'vite-plugin-eslint',
   ],
   i18n: {
     locales: languages,
@@ -108,5 +111,5 @@ export default defineNuxtConfig({
   },
   devServer: {
     port: 8002
-  }
+  },
 })

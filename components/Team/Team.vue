@@ -59,33 +59,13 @@ import Title from '../Title';
 const team = [
   {
     photo: imgAPI.architect[9],
-    name: 'John Doe',
-    title: 'Chairman',
+    name: 'Carolina Vale Rosa',
+    title: 'Co-founder',
   },
   {
     photo: imgAPI.architect[10],
-    name: 'jane Doe',
-    title: 'Chief Executive Officer',
-  },
-  {
-    photo: imgAPI.architect[11],
-    name: 'James Doe',
-    title: 'Chief Marketing Officer',
-  },
-  {
-    photo: imgAPI.architect[12],
-    name: 'Jihan Doe',
-    title: 'Chief Operation Officer',
-  },
-  {
-    photo: imgAPI.architect[13],
-    name: 'Johan Doe',
-    title: 'Senior Architect',
-  },
-  {
-    photo: imgAPI.architect[14],
-    name: 'Jena Doe',
-    title: 'Senior Architect',
+    name: 'Julia Larikova',
+    title: 'Co-founder',
   },
 ];
 
